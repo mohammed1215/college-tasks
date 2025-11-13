@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+
+    }
+
+    th,
+    td {
+      padding: 15px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    td.bg-special {
+      background-color: rgb(136 136 244);
+      color: black;
+      border: 1px solid black;
+    }
+
+    td.bg {
+      background-color: rgb(184 184 255);
+      color: black;
+      border: 1px solid black;
+    }
+
+    td.unique {
+      text-align: center;
+    }
+
+    tr {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <table style="width: 100%; border: 3px solid black;">
+    <thead>
+      <tr style="background-color: blue; color: white; border: 3px solid black;">
+        <th></th>
+        <th>Team Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Show on Roster</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="unique" colspan="5" style="text-align: center;">
+          <ins style="color: gray;"><em>Move to another Team</em></ins>
+        </td>
+      </tr>
+      <tr>
+        <td style="color: gray;"><ins><em>edit</em></ins></td>
+        <td class="bg-special">Team A</td>
+        <td class="bg-special">19/01/2012</td>
+        <td class="bg-special">Ongoing</td>
+        <td class="bg-special">yes</td>
+        <td style="color: gray;"><ins><em>delete</em></ins></td>
+      </tr>
+      <tr>
+        <td style="color: gray;"><ins><em>edit</em></ins></td>
+        <td class="bg">Team B</td>
+        <td class="bg">24/10/2011</td>
+        <td class="bg">18/01/2012</td>
+        <td class="bg">no</td>
+        <td style="color: gray;"><ins><em>delete</em></ins></td>
+      </tr>
+      <tr>
+        <td class="unique" colspan="5" style="text-align: center;">
+          <em>Not in a team between 12/08/2011 and 23/10/2011. <ins style="color: gray;"> Move to another
+              Team</ins></em>
+        </td>
+      </tr>
+      <tr>
+        <td style="color: gray;"><ins><em>edit</em></ins></td>
+        <td class="bg">Team B</td>
+        <td class="bg">1/01/2011</td>
+        <td class="bg">11/08/2011</td>
+        <td class="bg">yes</td>
+        <td style="color: gray;"><ins><em>delete</em></ins></td>
+      </tr>
+      <tr>
+        <td class="unique" colspan="5" style="text-align: center;">
+          <em> <ins style="color: gray;">Add to a team prior to 01/01/2011</ins></em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
