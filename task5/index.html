@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    body {
+      background-color: rgb(152, 152, 152);
+      color: black;
+    }
+
+    table {
+      width: 80%;
+      border: 4px solid rgb(32, 158, 226);
+      border-radius: 15px;
+      padding: 5px;
+      background-color: rgb(108, 94, 94);
+      /* border-collapse: ; */
+      border-spacing: 0 0;
+    }
+
+    tr {
+      border-radius: 10px 10px 0 0;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      /* border: 3px solid rgb(44, 48, 105); */
+      border-bottom: 0;
+      border-right: 0;
+      border-left: 0;
+      text-align: center;
+      color: black;
+      width: 50%;
+      /* margin: 0 0 5px 0; */
+      /* padding: 0 0 12px 0; */
+      background-color: white;
+    }
+
+    th {
+      border: 3px solid rgb(44, 48, 105);
+      border-bottom: 0;
+    }
+
+    th.left {
+      border-top-left-radius: 10px;
+      border-right: 0;
+    }
+
+    th.right {
+      border-top-right-radius: 10px;
+      border-left: 0;
+    }
+
+    td.rightt {
+      border-width: 0 3px 0 0;
+      border-style: solid;
+      border-color: rgb(44, 48, 105);
+    }
+
+    td.leftt {
+      border-width: 0 0 0 3px;
+      border-style: solid;
+      border-color: rgb(44, 48, 105);
+    }
+
+    td.last {
+      /* border-radius: 0 0 10px 10px; */
+      border: 3px solid rgb(44, 48, 105);
+      border-top: 0;
+    }
+
+    td.last.left {
+      border-bottom-left-radius: 10px;
+      border-right: 0;
+    }
+
+    td.last.right {
+      border-bottom-right-radius: 10px;
+      border-left: 0;
+    }
+
+
+
+    td {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Introduction to HTML</h1>
+  <h2>Terms</h2>
+
+  <h3>Web Pages</h3>
+  <p>Documents that are written in a language called HTML</p>
+  <br>
+
+  <h3>HTML</h3>
+  <p>Stands for HyperTextMarkup Language</p>
+  <br>
+
+  <h3>HTML tags</h3>
+  <p>Special codes that tell the web browser hot to display the HTML document</p>
+  <br>
+
+  <h3><mark>Web Browser</mark></h3>
+  <p>An application that can interrupt HTML and display the document in the format according to markup tags example:
+    Firefox, Google chrome.</p>
+  <br>
+  <table>
+    <tr>
+      <th class="left">year</th>
+      <th class="right">Version</th>
+    </tr>
+    <tr>
+      <td class="leftt">1991</td>
+      <td class="rightt">HTML</td>
+    </tr>
+    <tr>
+      <td class="leftt">1995</td>
+      <td class="rightt">HTML 2.0</td>
+    </tr>
+    <tr>
+      <td class="leftt">2012</td>
+      <td class="rightt">HTML 5</td>
+    </tr>
+    <tr>
+      <td class="last left">2017</td>
+      <td class="last right">HTML 5.2</td>
+    </tr>
+  </table>
+</body>
+
+</html>
