@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task 6</title>
+  <style>
+    body {
+      color: bisque;
+      background-image: url('../IMG-20251026-WA0004.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.47);
+      background-blend-mode: multiply;
+    }
+
+    label {
+      font-size: larger;
+    }
+
+    .btn {
+      padding: 5px 25px;
+      background-color: brown;
+      border: none;
+      color: blanchedalmond;
+      font-size: medium;
+      font-weight: bold;
+    }
+
+    select {
+      font-size: x-small;
+      padding: 5px 0;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Join University</h1>
+  <form action="">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"><br>
+
+    <label for="grade">Grade</label>
+    <input type="text" name="grade" id="grade"><br>
+
+    <span>Gender</span>
+
+    <input type="radio" name="gender" id="female">
+    <label for="female">female</label>
+
+    <input type="radio" name="gender" id="male">
+    <label for="male">male</label><br><br>
+
+    <label for="">Select Your Faculty</label>
+    <select name="faculty" id="faculty">
+      <option value="Engineering" selected>Faculty of Engineering</option>
+      <option value="Medicine">Faculty of Medicine</option>
+    </select><br><br>
+    <input type="submit" class="btn">
+  </form>
+</body>
+
+</html>
