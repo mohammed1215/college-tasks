@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 7</title>
+</head>
+
+<body>
+
+  <script>
+    var array = [5, 5, 2, 3, 4, 5];
+
+    document.write("Array Before:" + array + '<br>')
+    var countOfSplicing = 0;
+    for (let i = 0; i < array.length; i++) {
+      for (let j = i + 1; j < array.length; j++) {
+        console.log(i, j)
+        if (array[i] === array[j]) {
+          array.splice(j, 1)
+          j--;
+          countOfSplicing++;
+        }
+      }
+
+    }
+    ar = [...ar]
+
+    //using loop
+    console.log(array)
+    document.write("Array After:" + array + '<br>')
+
+    //using set
+    let ar = new Set(array)
+    console.log(ar)
+
+  </script>
+</body>
+
+</html>
